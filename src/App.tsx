@@ -81,10 +81,16 @@ const CardContainer: FC<CardContainerProps> = ({
         },
       );
 
-      rotation.value = withTiming(-1280, {
-        duration: 400,
-        easing: Easing.linear,
-      });
+      rotation.value = withTiming(
+        -1280,
+        {
+          duration: 400,
+          easing: Easing.linear,
+        },
+        () => {
+          rotation.value = 30;
+        },
+      );
     });
 
   const style = useAnimatedStyle(() => {
