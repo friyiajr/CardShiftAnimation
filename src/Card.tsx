@@ -14,9 +14,9 @@ const Card: FC<CardProps> = ({id, style}) => {
       case 0:
         return Colors.DARK_BLUE;
       case 1:
-        return Colors.DARK_GOLD;
-      case 2:
         return Colors.DARK_RED;
+      case 2:
+        return Colors.DARK_GOLD;
     }
   };
 
@@ -39,7 +39,6 @@ const cardStyle = StyleSheet.create({
     flex: 1,
   },
   container: {
-    flex: 1,
     flexDirection: 'row',
   },
   circle: {
